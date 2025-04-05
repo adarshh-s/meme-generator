@@ -1,18 +1,32 @@
-🖼 Meme Generator
-A fun and interactive React app that lets users create custom memes. Type in your top and bottom text, click a button, and generate a new meme image instantly using the Imgflip API.
+# **🖼 Meme Generator**
 
-🚀 Features
-Random meme image generation
+A fun and interactive React app that lets users create custom memes by adding their own top and bottom text to random meme images pulled from an external API.
 
-Custom top and bottom text
+---
 
-Responsive UI built with React
+## 🚀 Features
 
-🛠 Tech Stack
-React
+- 🔀 Random meme image generation
+- 📝 Custom top and bottom text inputs
+- ⚡ Instant preview of your meme
+- 📱 Responsive design
 
-JavaScript
+---
 
-HTML/CSS
+## 🛠 Tech Stack
 
-Imgflip API
+- **React**
+- **JavaScript**
+- **HTML/CSS**
+- **Imgflip API**
+
+---
+
+## 📦 Installation
+
+```bash
+git clone https://github.com/adarshh-s/meme-generator.git
+cd meme-generator
+npm install
+npm run dev
+```
