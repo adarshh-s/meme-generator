@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  margin: 0;
+}
+
+main {
+  margin-inline: auto;
+  padding: 36px;
+  max-width: 600px;
+}
+
+.header {
+  display: flex;
+  background-color: #711f8d;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.header > h1 {
+  font-size: 2rem;
+  margin-right: auto;
+}
+
+.logo-image {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  margin-left: 15px;
+}
+
+/* 🖊️ Form Styling */
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 17px;
+  margin-bottom: 17px;
+}
+
+.form input {
+  width: 100%;
+  min-width: 150px; /* Prevents shrinking */
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #d5d4d8;
+  text-indent: 5px;
+}
+
+.form button {
+  grid-column: 1 / -1;
+  border-radius: 5px;
+  background: linear-gradient(90.41deg, #711f8d 1.14%, #a818da 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.form input,
+.form button {
+  min-height: 40px;
+  font-family: 'Karla', sans-serif;
+}
+
+/* 🎭 Meme Styling */
+.meme {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 🖼️ Meme Image */
+.meme img {
+  width: auto; /* Prevents stretching */
+  max-width: 100%; /* Ensures it fits container */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* 📝 Meme Text Styling */
+.meme-text {
+  position: absolute;
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: Impact, sans-serif;
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow:
+    3px 3px 0 #000,
+    -3px -3px 0 #000,
+    3px -3px 0 #000,
+    -3px 3px 0 #000;
+  text-align: center;
+}
+
+.top {
+  top: 5%;
+}
+
+.bottom {
+  bottom: 5%;
+}
+
+/* 📱 Responsive Design */
+@media screen and (max-width: 600px) {
+  .meme-text {
+    font-size: 1.5rem;
+  }
+
+  .form {
+    grid-template-columns: 1fr; /* Stack inputs on smaller screens */
+  }
+
+  .form input {
+    min-width: 100%;
+  }
+}
